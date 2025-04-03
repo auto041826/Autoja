@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชื่อ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e2e;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+        }
+        .code-background {
+            background-color: #2c2c3e;
+            border-left: 4px solid #4a4a6a;
+        }
+        .code-line {
+            transition: all 0.3s ease;
+        }
+        .code-line:hover {
+            background-color: #3a3a5a;
+            transform: translateX(10px);
+        }
+        .cursor-blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-2xl bg-[#1e1e2e] rounded-xl shadow-2xl overflow-hidden">
+        <div class="code-background p-6">
+            <div class="text-xl mb-4">
+                <span class="text-green-400">&lt;profile&gt;</span>
+            </div>
+            
+            <div class="pl-4">
+                <div class="code-line py-2">
+                    <span class="text-blue-400">const</span> 
+                    <span class="text-yellow-400">developerInfo</span> 
+                    <span class="text-white">=</span> 
+                    <span class="text-purple-400">{</span>
+                </div>
+                <div class="code-line py-2 pl-4">
+                    <span class="text-red-400">name</span>: 
+                    <span class="text-green-300">"Kittiphon"</span>,
+                </div>
+                <div class="code-line py-2 pl-4">
+                    <span class="text-red-400">role</span>: 
+                    <span class="text-green-300">"Software Developer"</span>,
+                </div>
+                <div class="code-line py-2 pl-4">
+                    <span class="text-red-400">skills</span>: 
+                    <span class="text-purple-400">[</span>
+                    <span class="text-green-300">"Node.js"</span>, 
+                    <span class="text-green-300">"Python"</span>
+                    <span class="text-purple-400">]</span>,
+                </div>
+                <div class="code-line py-2 pl-4">
+                    <span class="text-red-400">contact</span>: 
+                    <span class="text-green-300">"idffxindo@gmail.com" & discord young_ta.0401 </span>
+                </div>
+                <div class="code-line py-2">
+                    <span class="text-purple-400">}</span>;
+                </div>
+            </div>
+            
+            <div class="text-xl mt-4">
+                <span class="text-green-400">&lt;/profile&gt;</span>
+                <span class="cursor-blink text-white">|</span>
+            </div>
+        </div>
+
+        <div class="bg-[#2c2c3e] p-4">
+            <div class="flex justify-center space-x-6">
+                <a href="https://discord.gg/haBT7B2DeP" target="_blank" class="text-gray-300 hover:text-green-400 text-2xl transition-colors">
+                    <i class="ri-discord-fill"></i>
+                </a>                
+                <a href="https://www.facebook.com/nid.hnxy.plxy.phan.mi.di/" target="_blank" class="text-gray-300 hover:text-green-400 text-2xl transition-colors">
+                    <i class="ri-facebook-box-fill"></i>
+                </a>                
+                <a href="https://codepen.io" target="_blank" class="text-gray-300 hover:text-green-400 text-2xl transition-colors">
+                    <i class="ri-CodePen-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
